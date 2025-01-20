@@ -1,6 +1,13 @@
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 class Person {
+    @JsonProperty("vardas")
     private String name;
+
+    @JsonProperty("amzius")
     private int age;
+
+    @JsonProperty("elPastas")
     private String email;
 
     public Person() {
@@ -59,6 +66,6 @@ class Person {
 
     @Override
     public String toString() {
-        return "Person{name='" + name + "', age=" + age + ", email='" + email + "'}";
+        return "Person{vardas='" + name + "', amzius=" + age + ", elPastas='" + email + "'}";
     }
 }
